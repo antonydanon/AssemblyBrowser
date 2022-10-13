@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserCore", "AssemblyBrowserCore\AssemblyBrowserCore.csproj", "{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserDesktopApp", "AssemblyBrowserDesktopApp\AssemblyBrowserDesktopApp.csproj", "{C491723E-7FAF-4674-AFCD-632E3584D4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserTests", "AssemblyBrowserTests\AssemblyBrowserTests.csproj", "{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
