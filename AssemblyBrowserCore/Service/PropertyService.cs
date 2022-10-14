@@ -13,7 +13,7 @@ namespace AssemblyBrowserCore.Service
             {
                 PropertyInfo propertyInfo = new PropertyInfo();
                 propertyInfo.PropertyName = property.Name;
-                propertyInfo.PropertyType = property.GetType().Name;
+                propertyInfo.PropertyType = property.PropertyType.Name;
                 propertyInfos.Add(propertyInfo);
             }
             

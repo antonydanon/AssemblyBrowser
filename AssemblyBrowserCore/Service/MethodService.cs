@@ -21,7 +21,7 @@ namespace AssemblyBrowserCore.Service
             {
                 MethodInfo methodInfo = new MethodInfo();
                 methodInfo.MethodName = method.Name;
-                methodInfo.ReturnType = method.GetType().Name;
+                methodInfo.ReturnType = method.ReturnType.Name;
                 methodInfo.FieldInfos = FieldService.GetFieldInfos(method.GetParameters());
                 methodInfos.Add(methodInfo);
             }

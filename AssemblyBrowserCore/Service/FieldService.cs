@@ -14,7 +14,7 @@ namespace AssemblyBrowserCore.Service
             {
                 FieldInfo fieldInfo = new FieldInfo();
                 fieldInfo.FieldName = field.Name;
-                fieldInfo.FieldType = field.GetType().Name;
+                fieldInfo.FieldType = field.FieldType.Name;
                 fieldInfos.Add(fieldInfo);
             }
             
@@ -28,7 +28,7 @@ namespace AssemblyBrowserCore.Service
             {
                 FieldInfo fieldInfo = new FieldInfo();
                 fieldInfo.FieldName = parameterInfo.Name;
-                fieldInfo.FieldType = parameterInfo.GetType().Name;
+                fieldInfo.FieldType = parameterInfo.ParameterType.Name;
                 fieldInfos.Add(fieldInfo);
             }
             
