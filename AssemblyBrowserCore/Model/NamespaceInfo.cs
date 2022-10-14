@@ -2,7 +2,7 @@
 {
     public class NamespaceInfo
     {
-        private string NamespaceTitle { get; set; }
-        private TypeInfo TypeInfo { get; set; }
+        public string NamespaceTitle { get; set; }
+        public TypeInfo TypeInfo { get; set; }
     }
 }
