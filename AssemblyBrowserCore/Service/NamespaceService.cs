@@ -21,7 +21,7 @@ namespace AssemblyBrowserCore.Service
             foreach (var namespaceTitle in namespaces)
             {
                 namespaceInfos[index].NamespaceTitle = namespaceTitle;
-                namespaceInfos[index].TypeInfo = TypeService.GetTypeInfo(namespaceTitle);
+                namespaceInfos[index].TypeInfo = TypeService.GetTypeInfo(assembly, namespaceTitle);
             }
             
             return new List<NamespaceInfo>();
