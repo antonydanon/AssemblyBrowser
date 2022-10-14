@@ -2,7 +2,7 @@
 {
     public class PropertyInfo
     {
-        private string PropertyName { get; set; }
-        private string PropertyType { get; set; }
+        public string PropertyName { get; set; }
+        public string PropertyType { get; set; }
     }
 }

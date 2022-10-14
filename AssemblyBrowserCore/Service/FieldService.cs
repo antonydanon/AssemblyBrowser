@@ -1,12 +1,38 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace AssemblyBrowserCore.Service
 {
     public class FieldService
     {
-        public List<FieldInfo> GetFieldInfos()
+        public List<FieldInfo> GetFieldInfos(Type type)
         {
-            return new List<FieldInfo>();
+            List<FieldInfo> fieldInfos = new();
+            System.Reflection.FieldInfo[] fields = type.GetFields();
+            foreach (var field in fields)
+            {
+                FieldInfo fieldInfo = new FieldInfo();
+                fieldInfo.FieldName = field.Name;
+                fieldInfo.FieldType = field.GetType().Name;
+                fieldInfos.Add(fieldInfo);
+            }
+            
+            return fieldInfos;
+        }
+        
+        public List<FieldInfo> GetFieldInfos(ParameterInfo[] parameterInfos)
+        {
+            List<FieldInfo> fieldInfos = new();
+            foreach (var parameterInfo in parameterInfos)
+            {
+                FieldInfo fieldInfo = new FieldInfo();
+                fieldInfo.FieldName = parameterInfo.Name;
+                fieldInfo.FieldType = parameterInfo.GetType().Name;
+                fieldInfos.Add(fieldInfo);
+            }
+            
+            return fieldInfos;
         }
     }
 }

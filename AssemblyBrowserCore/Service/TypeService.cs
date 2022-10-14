@@ -26,9 +26,9 @@ namespace AssemblyBrowserCore.Service
             foreach (var type in types)
             {
                 TypeInfo typeInfo = new TypeInfo();
-                typeInfo.FieldInfos = FieldService.GetFieldInfos();
-                typeInfo.PropertyInfos = PropertyService.GetPropertyInfos();
-                typeInfo.MethodInfos = MethodService.GetMethodInfos();
+                typeInfo.FieldInfos = FieldService.GetFieldInfos(type);
+                typeInfo.PropertyInfos = PropertyService.GetPropertyInfos(type);
+                typeInfo.MethodInfos = MethodService.GetMethodInfos(type);
                 typeInfo.TypeName = type.Name;
             }
             return typeInfos;

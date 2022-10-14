@@ -7,7 +7,7 @@ namespace AssemblyBrowserCore.Service
 {
     public class NamespaceService
     {
-        public TypeService TypeService { get; set; }
+        public TypeService TypeService { get; }
         public NamespaceService()
         {
             TypeService = new TypeService();
@@ -15,16 +15,17 @@ namespace AssemblyBrowserCore.Service
         public List<NamespaceInfo> GetNamespaceInfo(Assembly assembly)
         {
             List<NamespaceInfo> namespaceInfos = new();
-            IEnumerable<string?> namespaces = GetNamespaces(assembly);
-
-            int index = 0;
+            IEnumerable<string> namespaces = GetNamespaces(assembly);
+            
             foreach (var namespaceTitle in namespaces)
             {
-                namespaceInfos[index].NamespaceTitle = namespaceTitle;
-                namespaceInfos[index].TypeInfo = TypeService.GetTypeInfo(assembly, namespaceTitle);
+                NamespaceInfo namespaceInfo = new NamespaceInfo();
+                namespaceInfo.NamespaceTitle = namespaceTitle;
+                namespaceInfo.TypeInfo = TypeService.GetTypeInfo(assembly, namespaceTitle);
+                namespaceInfos.Add(namespaceInfo);
             }
             
-            return new List<NamespaceInfo>();
+            return namespaceInfos;
         }
 
         private IEnumerable<string?> GetNamespaces(Assembly assembly)

@@ -2,7 +2,7 @@
 {
     public class FieldInfo
     {
-        private string FieldName { get; set; }
-        private string FieldType { get; set; }
+        public string FieldName { get; set; }
+        public string FieldType { get; set; }
     }
 }
