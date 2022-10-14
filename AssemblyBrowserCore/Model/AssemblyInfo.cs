@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Dynamic;
 
 namespace AssemblyBrowserCore
 {
     public class AssemblyInfo
     {
-        private List<NamespaceInfo> _namespaciesInfos = new();
+        public List<NamespaceInfo> NamespaciesInfos { get; set; }
     }
 }
