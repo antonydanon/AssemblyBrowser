@@ -6,6 +6,8 @@ namespace AssemblyBrowserCore
     public class TypeInfo
     {
         public string TypeName { get; set; }
+        
+        public string Type { get; set; }
         public List<FieldInfo> FieldInfos { get; set; }
         public List<PropertyInfo> PropertyInfos { get; set; }
         public List<MethodInfo> MethodInfos { get; set; }

@@ -30,6 +30,12 @@ namespace AssemblyBrowserCore.Service
                 typeInfo.PropertyInfos = PropertyService.GetPropertyInfos(type);
                 typeInfo.MethodInfos = MethodService.GetMethodInfos(type);
                 typeInfo.TypeName = type.Name;
+                if (type.IsClass)
+                    typeInfo.Type = "Class";
+                if (type.IsInterface)
+                    typeInfo.Type = "Interface";
+                if (type.IsEnum)
+                    typeInfo.Type = "Enum";
                 typeInfos.Add(typeInfo);
             }
             return typeInfos;

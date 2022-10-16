@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserCore", "AssemblyBrowserCore\AssemblyBrowserCore.csproj", "{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserDesktopApp", "AssemblyBrowserDesktopApp\AssemblyBrowserDesktopApp.csproj", "{C491723E-7FAF-4674-AFCD-632E3584D4BC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserTests", "AssemblyBrowserTests\AssemblyBrowserTests.csproj", "{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BF083E44-39B7-4011-8547-A38A78B1EFD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserDesktopApp", "AssemblyBrowserDesktopApp\AssemblyBrowserDesktopApp.csproj", "{86D4D33B-DBDF-43B2-A012-9A6E4FFCEA9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,10 +18,6 @@ Global
 		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1752D9C3-3BC9-4046-9EE4-920EAEDA9817}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C491723E-7FAF-4674-AFCD-632E3584D4BC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{724DEFE0-753C-4D1A-A854-1DCD2FFB70F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -30,5 +26,9 @@ Global
 		{BF083E44-39B7-4011-8547-A38A78B1EFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF083E44-39B7-4011-8547-A38A78B1EFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF083E44-39B7-4011-8547-A38A78B1EFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D4D33B-DBDF-43B2-A012-9A6E4FFCEA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D4D33B-DBDF-43B2-A012-9A6E4FFCEA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D4D33B-DBDF-43B2-A012-9A6E4FFCEA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D4D33B-DBDF-43B2-A012-9A6E4FFCEA9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using AssemblyBrowserCore.Exception;
 
 namespace AssemblyBrowserCore.Service
@@ -10,6 +11,7 @@ namespace AssemblyBrowserCore.Service
 
         public AssemblyService(string assemblyPath)
         {
+            
             AssemblyPath = assemblyPath;
             NamespaceService = new NamespaceService();
         }
